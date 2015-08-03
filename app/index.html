@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Regal Puffin Coffee</title>
+    <meta name="description" content="regal-puffin">
+    <meta name="author" content="Regal Puffin Coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+
+
+    <link rel="stylesheet" href="styles/main.css">
+  <!-- web font  -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <!-- External plugins -->
+    <!-- Revolution slider  -->
+    <link rel="stylesheet" type="text/css" href="scripts/js-plugins/rs-plugin/css/settings.css" media="screen" />
+
+
+    <!-- Neko framework  -->
+    <link type="text/css" rel="stylesheet" href="styles/custom-icons/css/custom-icons.css">
+    <link type="text/css" rel="stylesheet" href="scripts/neko-framework/external-plugins/external-plugins.min.css">
+    <link type="text/css" rel="stylesheet" href="scripts/neko-framework/css/layout/neko-framework-layout.css">
+    <link type="text/css" rel="stylesheet" id="color" href="scripts/neko-framework/css/color/neko-framework-color.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- endbuild -->
+  </head>
+  <body ng-app="regalpuffinApp" class="activate-appear-animation header-6">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- global-wrapper -->
+  <div id="global-wrapper">
+    <!-- header -->
+
+    <header class="menu-header navbar-fixed-top" role="banner">
+      <section id="pre-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 hidden-xs">
+              <ul class="quick-menu">
+                <li><a href="template-site-map.html" class="linkLeft">Site map</a></li>
+                <li><a href="template-about.html">About us</a></li>
+                <li><a href="template-team.html">Our team</a></li>
+                <li><a href="template-contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12 quick-contact">
+              <div class="contact-phone"><img src="images/phone-number.png"></div>
+              <ul class="social-icons">
+                <li><a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a></li>
+                <li><a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a></li>
+                <li><a href="#" class="linkedin" title="linkedin"><i class="icon-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="col-xs-12">
+
+        <nav class="navbar navbar-default" role="navigation">
+
+            <!-- Logo -->
+            <div class="col-xs-3">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/main-logo.png" alt="Regal Puffin Coffee" class="main-logo"/>
+              <img src="images/main-logo-light.png" alt="Regal Puffin Coffe" class="main-logo-light"/>
+            </a>
+            </div>
+            <!-- /Logo -->
+          <div class="navbar-header">
+            <!-- hamburger button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- / hamburger button -->
+
+            <div class="collapse navbar-collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="neko-mega-menu-trigger">
+                <a href="index.html" class="active">Home</a>
+              </li>
+
+              <li class="neko-mega-menu-trigger"> 
+                <a href="features-bootstrap.html">About Us</a>
+              </li>
+
+              <li class="neko-mega-menu-trigger">
+                <a href="#">Get Involved</a>
+              </li>
+
+              <li>
+                <a href="shop-home.html">Shop</a>
+              </li>
+
+              <li><a href="template-contact.html">Contact</a></li>
+
+              <li>
+                <a href="blog-home-sidebar-right.html">Blog</a>
+              </li>
+            </ul>
+            <!-- / End main navigation -->
+          </div>
+          </div>
+          
+        </nav>
+      </div>
+
+    </header>
+<!-- header -->
+<!-- content -->
+    <main id="content">
+      <div ng-view></div>
+    </main>
+<!-- / content -->
+
+<!-- footer -->
+<footer id="main-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="footer-widget">
+          <img class="responsive" src="images/logo-footer.png" alt="" />
+        </div>
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="footer-widget clearfix">
+
+          <h3>Latest works</h3>
+          <ul class="list-unstyled works-list">
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works1.jpg" alt="works"></a>
+            </li>
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works2.jpg" alt="works"></a>
+            </li>
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works3.jpg" alt="works"></a>
+            </li>
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works4.jpg" alt="works"></a>
+            </li>
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works5.jpg" alt="works"></a>
+            </li>
+            <li>
+              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works6.jpg" alt="works"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="col-sm-3">
+        <div class="footer-widget">
+
+          <h3>Little NEKO</h3>
+          <ul class="social-icons dark-color squared social-hover">
+            <li>
+              <a href="#" class="rss" title="rss"><i class="icon-glyph-342"></i></a>
+            </li>
+            <li>
+              <a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
+            </li>
+            <li>
+              <a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a>
+            </li>
+            <li>
+              <a href="#" class="gplus" title="gplus"><i class="icon-glyph-317"></i></a>
+            </li>
+          </ul> 
+
+          <address class="pt">
+            <p>
+              144 Regal Puffin Main Street<br>
+              Washington, DC 20500 <br>
+              412.666.7485 <br>
+              <a href="mailto:contact@template.com">contact@template.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="footer-widget">
+          <h3>What we do</h3>
+          <ul class="list-unstyled list-icon arrow border">
+            <li class="no-pt">Web design</li>
+            <li>UX interactions</li>
+            <li>Consulting</li>
+            <li>Integration</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+      <div ng-view></div>
+</footer>
+<!-- / footer -->
+</div>
+<!-- global wrapper -->
+
+<!-- End Document ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- neko custom script -->
+
+        <script src="scripts/neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+        <script type="text/javascript" src="scripts/neko-framework/js/jquery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="scripts/neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+
+<!-- external framework plugins -->
+        <script type="application/javascript" src="scripts/neko-framework/external-plugins/external-plugins.min.js"></script>
+<!-- neko framework script -->
+        <script type="text/javascript" src="scripts/neko-framework/js/neko-framework.js"></script>
+
+        <script type="text/javascript" src="scripts/js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="scripts/js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+        <script src="scripts/custom.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
