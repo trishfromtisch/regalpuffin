@@ -35,5 +35,9 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "dependencies": {
+    "nodemailer": "^1.4.0",
+    "nodemailer-sendgrid-transport": "^0.2.0"
   }
 }

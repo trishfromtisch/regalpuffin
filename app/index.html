@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -57,7 +57,7 @@
               </ul>
             </div>
             <div class="col-sm-6 col-xs-12 quick-contact">
-              <div class="contact-phone"><img src="images/phone-number.png"></div>
+              <div class="contact-phone"><img id="phone" src="images/phone-number.png"></div>
               <ul class="social-icons">
                 <li><a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a></li>
                 <li><a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a></li>
@@ -72,14 +72,15 @@
         <nav class="navbar navbar-default" role="navigation">
 
             <!-- Logo -->
-            <div class="col-xs-3">
+            <div class="col-xs-5">
             <a class="navbar-brand" href="index.html">
               <img src="images/main-logo.png" alt="Regal Puffin Coffee" class="main-logo"/>
               <img src="images/main-logo-light.png" alt="Regal Puffin Coffe" class="main-logo-light"/>
             </a>
             </div>
             <!-- /Logo -->
-          <div class="navbar-header">
+
+          <div class="navbar-header col-xs-6">
             <!-- hamburger button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -101,7 +102,7 @@
               </li>
 
               <li class="neko-mega-menu-trigger">
-                <a href="#">Get Involved</a>
+                <a href="#/get-involved">Get Involved</a>
               </li>
 
               <li>
@@ -134,44 +135,17 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-3 col-sm-offset-2">
         <div class="footer-widget">
           <img class="responsive" src="images/logo-footer.png" alt="" />
         </div>
       </div>
       
-      <div class="col-sm-3">
-        <div class="footer-widget clearfix">
 
-          <h3>Latest works</h3>
-          <ul class="list-unstyled works-list">
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works1.jpg" alt="works"></a>
-            </li>
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works2.jpg" alt="works"></a>
-            </li>
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works3.jpg" alt="works"></a>
-            </li>
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works4.jpg" alt="works"></a>
-            </li>
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works5.jpg" alt="works"></a>
-            </li>
-            <li>
-              <a href="#" class="tips" title="Little Neko work"><img src="images/theme-pics/works/works6.jpg" alt="works"></a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="col-sm-3">
+      <div class="col-sm-6">
         <div class="footer-widget">
 
-          <h3>Little NEKO</h3>
+          <h3>Regal Puffin Coffee</h3>
           <ul class="social-icons dark-color squared social-hover">
             <li>
               <a href="#" class="rss" title="rss"><i class="icon-glyph-342"></i></a>
@@ -189,34 +163,15 @@
 
           <address class="pt">
             <p>
-              144 Regal Puffin Main Street<br>
-              Washington, DC 20500 <br>
-              412.666.7485 <br>
+              Brooklyn, New York <br>
+              <img id="phone" src="images/phone-number.png"><br></span>
               <a href="mailto:contact@template.com">contact@template.com</a>
             </p>
           </address>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="footer-widget">
-          <h3>What we do</h3>
-          <ul class="list-unstyled list-icon arrow border">
-            <li class="no-pt">Web design</li>
-            <li>UX interactions</li>
-            <li>Consulting</li>
-            <li>Integration</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
   </div>
-
-
-
-
-
-      <div ng-view></div>
 </footer>
 <!-- / footer -->
 </div>
@@ -270,6 +225,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/getinvolved.js"></script>
         <!-- endbuild -->
 </body>
 </html>

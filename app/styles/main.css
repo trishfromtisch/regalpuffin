@@ -94,3 +94,13 @@ a.navbar-brand {
   padding-top: 7px;
   padding-bottom: 0;
 }
+.center-text {
+  text-align: center;
+}
+
+#phone {
+  height: 18px;
+}
+.image-bkgrnd {
+  background-image: url('../images/beans-in-roaster.jpg');
+}

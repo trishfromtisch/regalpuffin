@@ -1,15 +1,18 @@
-			<header class="page-header x-large image-background image-9 bottom-center dark-color center no-padding">
+			<header class="page-header x-large image-background image-bkgrnd bottom-center dark-color center no-padding">
+			<section class="image-background image-bkgrnd fullscreen light-color" id="animated-header">
+				
 				<div class="mask opacity-2">
-
 					<div class="container v-align-center">
-						<div class="row">
-							<div class="col-md-12">
-								<h1 class="x-large">Contact us</h1>
+						<div class="row pt-large pb-large">
+							<div class="col-md-12 text-center">
+								<h1 class="x-large text-light" data-nekoanim="fadeInUp" data-nekodelay="200">Get Involved</h1>
 							</div>
 						</div>
 					</div>
-
 				</div>
+
+				<canvas id="animated-bubble"></canvas>
+			</section>
 			</header>
 
 			<!-- intro -->
@@ -17,29 +20,24 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<h2>Keep in touch with us</h2>
+							<h2>Interested in supporting us?</h2>
 							<p class="no-mb">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. 
+								We're looking for financial investors who've always dreamed of opening their own shop.  We're seeking finance loans to make this dream a reality and get our cafe off the ground.
 						</p>
 						</div>
 						<div class="col-sm-4">
 							<p>
-							Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								If you're interested and want to learn more, please contact us and we will send you a copy of our business plan with Pro Forma and schedule a meeting at your convenience.
+
+								We can't wait to start roasting and brewing in our very own shop.
 						</p>
 						</div>
 						<div class="col-sm-4">
-							<h2>Address:</h2>
 							<address>
-								<p>
-									144 Edena Main Street<br>
-									Washington, DC 20500 <br>
-									412.666.7485 <br>
-									<a href="mailto:contact@template.com">contact@template.com</a>
+								<p>		
+									Brooklyn, New York <br>
+									<img id="phone" src="images/phone-number.png">
+									<a href="mailto:info@regalpuffincoffee.com">info@regalpuffincoffee.com</a>
 								</p>
 							</address>
 						</div>
@@ -53,8 +51,8 @@
 				<div class="container">
 					<div class="row">
 
-						<form method="post" action="neko-framework/external-plugins/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form" class="form-minimal">
-							<div class="col-md-3 col-sm-6"> 
+						<form method="post" action="scripts/neko-framework/external-plugins/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form" class="form-minimal">
+							<div class="col-md-6 col-sm-12"> 
 								<div class="form-group">
 									<label for="name">Name</label>
 									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
@@ -74,34 +72,34 @@
 								</div>
 
 							</div>
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-6 col-sm-12">
 								<div class="form-group">
 									<label for="comments">Comments</label>
 									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
 									<div class="form-line"></div>
 								</div>
 
-								<fieldset class="clearfix securityCheck">
+								<!-- <fieldset class="clearfix securityCheck">
 									<h3>Security</h3>
 
 									<div class="form-group">
 										<label for="verify">		
-											<img src="neko-framework/external-plugins/neko-contact-ajax-plugin/php/image.php" alt="Image verification"/>
+											<img src="scripts/neko-framework/external-plugins/neko-contact-ajax-plugin/php/image.php" alt="Image verification"/>
 										</label>
 										<input class="required form-control"  id="verify" name="verify" type="text" placeholder="Enter the captcha…">
 										<div class="form-line"></div>
 									</div>
 									
-								</fieldset>
+								</fieldset> -->
 								<button name="submit" type="submit" class="btn large primary" id="submit"> Submit</button>
 								<div class="result"></div>
 							</div>
 						</form>
-						<div class="col-md-6 col-sm-12">
+<!-- 						<div class="col-md-6 col-sm-12">
 							<div class="box">
 								<div id="map-wrapper" class="small light"></div>
 							</div>
-						</div>                       
+						</div>  -->                      
 						
 						
 					</div>
@@ -111,30 +109,3 @@
 			<!-- / contact form -->
 		</main>
 		<!-- / content -->
-
-		<!-- footer -->
-		<footer id="main-footer">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-sm-6">
-						<div class="footer-widget">
-							<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo" class="mb-small">
-							<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you do! </p>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="footer-widget">
-
-							<h3>Little NEKO</h3>
-							<address>
-								<p>
-									144 Edena Main Street<br>
-									Washington, DC 20500 <br>
-									412.666.7485 <br>
-									<a href="mailto:contact@template.com">contact@template.com</a>
-								</p>
-							</address>
-						</div>
-					</div>
