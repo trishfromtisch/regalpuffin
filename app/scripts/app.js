@@ -31,7 +31,7 @@ angular
       })
       .when('/get-involved', {
         templateUrl: 'views/getinvolved.html',
-        controller: 'GICtrl',
+        controller: 'GetInvolvedCtrl',
         controllerAs: 'get-involved'
       })
       .otherwise({
