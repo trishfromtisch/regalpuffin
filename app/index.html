@@ -135,17 +135,22 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 col-sm-offset-2">
+      <div class="col-sm-3">
         <div class="footer-widget">
           <img class="responsive" src="images/logo-footer.png" alt="" />
         </div>
       </div>
       
 
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="footer-widget">
-
-          <h3>Regal Puffin Coffee</h3>
+          <address class="pt">
+            <p>
+              Brooklyn, New York <br>
+              <img id="phone" src="images/phone-number.png"><br></span>
+              <a href="mailto:contact@template.com">contact@template.com</a>
+            </p>
+          </address>
           <ul class="social-icons dark-color squared social-hover">
             <li>
               <a href="#" class="rss" title="rss"><i class="icon-glyph-342"></i></a>
@@ -160,18 +165,22 @@
               <a href="#" class="gplus" title="gplus"><i class="icon-glyph-317"></i></a>
             </li>
           </ul> 
-
-          <address class="pt">
-            <p>
-              Brooklyn, New York <br>
-              <img id="phone" src="images/phone-number.png"><br></span>
-              <a href="mailto:contact@template.com">contact@template.com</a>
-            </p>
-          </address>
         </div>
       </div>
+      <div class="col-sm-5"> 
+        <br>
+      <form method="post" action="scripts/neko-framework/external-plugins/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form" novalidate="novalidate">
+        
+          <div class="form-group">
+<!--             <label for="email">Your email</label> -->
+            <input type="text" class="form-control" name="email" id="email" placeholder="Your email" title="Please enter your email address to subscribe to our updates">
+          </div>
+          <button name="submit" type="submit" class="btn small default" id="submit"> Subscribe</button>
+          <div class="result"></div>
+      </form>
+      </div> 
     </div>
-  </div>
+  </div>  
 </footer>
 <!-- / footer -->
 </div>
