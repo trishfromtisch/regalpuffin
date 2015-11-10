@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Regal Puffin Coffee</title>
+    <meta name="description" content="regal-puffin">
+    <meta name="author" content="Regal Puffin Coffee">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+
+
+    <link rel="stylesheet" href="styles/main.css">
+  <!-- web font  -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <!-- External plugins -->
+    <!-- Revolution slider  -->
+    <link rel="stylesheet" type="text/css" href="scripts/js-plugins/rs-plugin/css/settings.css" media="screen" />
+
+
+    <!-- Neko framework  -->
+    <link type="text/css" rel="stylesheet" href="styles/custom-icons/css/custom-icons.css">
+    <link type="text/css" rel="stylesheet" href="scripts/neko-framework/external-plugins/external-plugins.min.css">
+    <link type="text/css" rel="stylesheet" href="scripts/neko-framework/css/layout/neko-framework-layout.css">
+    <link type="text/css" rel="stylesheet" id="color" href="scripts/neko-framework/css/color/neko-framework-color.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- endbuild -->
+  </head>
+  <body ng-app="regalpuffinApp" class="activate-appear-animation header-6">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- global-wrapper -->
+  <div id="global-wrapper">
+    <!-- header -->
+
+    <header class="menu-header navbar-fixed-top" role="banner">
+      <section id="pre-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 hidden-xs">
+              <ul class="quick-menu">
+                <li><a href="" ng-click="linkTo('/#about-us')">About us</a></li>
+                <li><a href="#/get-involved">Get Involved</a></li>
+                <li><a href="" ng-click="linkTo('/#contact')">Contact</a></li>
+                <li><a href="http://regalpuffincoffee.tumblr.com/">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12 quick-contact">
+              <div class="contact-phone"><img id="phone" src="images/phone-number.png"></div>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/RegalPuffinCoffee" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a></li>
+                <li><a href="https://twitter.com/regalpuffin" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="col-xs-12">
+
+        <nav class="navbar navbar-default" role="navigation" ng-controller="MainCtrl">
+
+            <!-- Logo -->
+            <div class="col-xs-5">
+            <a class="navbar-brand" href="" ng-click="linkTo('/')">
+              <img src="images/main-logo.png" alt="Regal Puffin Coffee" class="main-logo"/>
+              <img src="images/main-logo-light.png" alt="Regal Puffin Coffee" class="main-logo-light"/>
+            </a>
+            </div>
+            <!-- /Logo -->
+
+          <div class="navbar-header col-xs-6">
+            <!-- hamburger button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- / hamburger button -->
+
+            <div class="collapse navbar-collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="neko-mega-menu-trigger">
+                <a href="" ng-click="linkTo('/')" ng-class="{ active: isActive('/')}">Home</a>
+              </li>
+
+              <li class="neko-mega-menu-trigger"> 
+                <a href="" ng-click="linkTo('/#about-us')" ng-class="{ active: isActive('/#about-us')}">About Us</a>
+              </li>
+
+              <li class="neko-mega-menu-trigger">
+                <a href="#/get-involved" ng-class="{ active: isActive('/#/get-involved')}">Get Involved</a>
+              </li>
+
+              <li>
+                <a href="#/shop" ng-class="{ active: isActive('/#/shop')}">Shop</a>
+              </li>
+
+              <li><a href="" ng-click="linkTo('/#contact')" ng-class="{ active: isActive('/#contact')}">Contact</a></li>
+
+              <li>
+                <a href="http://regalpuffincoffee.tumblr.com/">Blog</a>
+              </li>
+            </ul>
+            <!-- / End main navigation -->
+          </div>
+          </div>
+          
+        </nav>
+      </div>
+
+    </header>
+<!-- header -->
+<!-- content -->
+    <main id="content">
+      <div ng-view autoscroll="true"></div>
+    </main>
+<!-- / content -->
+
+<!-- footer -->
+<footer id="main-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer-widget">
+          <img class="responsive" src="images/logo-footer.png" alt="" />
+        </div>
+      </div>
+      
+        <div class="col-sm-5" id="contact">
+          <div class="footer-widget">
+            <address class="pt">
+              <p style="text-align:center">
+                Brooklyn, New York <br>
+                <img id="phone" src="images/phone-number.png"><br></span>
+                <a href="mailto:info@regalpuffincoffee.com">info@regalpuffincoffee.com</a>
+              </p>
+            </address>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <ul class="social-icons dark-color squared social-hover col-sm-10">
+                <li>
+                  <a href="https://www.facebook.com/RegalPuffinCoffee" class="facebook" title="facebook"><img class="soc-media" src="images/Facebook.png"></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/regalpuffincoffee" class="gplus" title="instagram"><img class="soc-media" src="images/Instagram.png"></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/regalpuffin" class="twitter" title="twitter"><img class="soc-media" src="images/Twitter.png"></a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/+RegalpuffincoffeeBK" class="gplus" title="gplus"><img class="soc-media" src="images/Google.png"></a>
+                </li>
+                <li>
+                  <a href="http://regalpuffincoffee.tumblr.com/" class="facebook" title="tumblr"><img class="soc-media" src="images/Tumblr.png"></a>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-4" ng-controller="MainCtrl"> 
+        <br>
+        <br>
+      <form id="emailfrm" role="form" novalidate="novalidate" name="form">
+          <div class="form-group">
+<!--             <label for="email">Your email</label> -->
+            <input type="text" class="form-control" name="uEmail" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your email" ng-model="user.email" title="Please enter your email address to subscribe to our updates">
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <button name="submit" type="submit" class="btn small default" ng-click="update(user)"><span>{{buttonStatus}}</span></button>
+            </div>
+          </div>
+          <div class="result"></div>
+      </form>
+      </div> 
+  </div>  
+</footer>
+<!-- / footer -->
+</div>
+<!-- global wrapper -->
+
+<!-- End Document ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- neko custom script -->
+
+        <script src="scripts/neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
+        <script type="text/javascript" src="scripts/neko-framework/js/jquery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="scripts/neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+
+<!-- external framework plugins -->
+        <script type="application/javascript" src="scripts/neko-framework/external-plugins/external-plugins.min.js"></script>
+<!-- neko framework script -->
+        <script type="text/javascript" src="scripts/neko-framework/js/neko-framework.js"></script>
+
+        <script type="text/javascript" src="scripts/js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="scripts/js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+        <script src="scripts/custom.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/getinvolved.js"></script>
+        <script src="scripts/directives/tab.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

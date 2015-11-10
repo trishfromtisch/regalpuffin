@@ -1,0 +1,107 @@
+			<header class="page-header x-large image-background image-bkgrnd bottom-center dark-color center no-padding">
+			<section class="image-background image-bkgrnd fullscreen light-color" id="animated-header">
+				
+				<div class="mask opacity-2">
+					<div class="container v-align-center">
+						<div class="row pt-large pb-large">
+							<div class="col-md-12 text-center">
+								<h1 class="x-large text-light" data-nekoanim="fadeInUp" data-nekodelay="200">Get Involved</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<canvas id="animated-bubble"></canvas>
+			</section>
+			</header>
+
+			<!-- intro -->
+			<section class="pt-medium pb-medium light-color">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<h2>Interested in supporting us?</h2>
+							<p class="no-mb">
+								We're looking for financial investors who've always dreamed of opening their own shop.  We're seeking finance loans to make this dream a reality and get our cafe off the ground.
+						</p>
+						</div>
+						<div class="col-sm-4">
+							<p>
+								If you're interested and want to learn more, please contact us and we will send you a copy of our business plan with Pro Forma and schedule a meeting at your convenience.
+
+								We can't wait to start roasting and brewing in our very own shop.
+						</p>
+						</div>
+						<div class="col-sm-4">
+							<address>
+								<p>		
+									Brooklyn, New York <br>
+									<img id="phone" src="images/phone-number.png">
+									<a href="mailto:info@regalpuffincoffee.com">info@regalpuffincoffee.com</a>
+								</p>
+							</address>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="container">
+					<div class="row">
+
+						<form method="post" action="scripts/neko-framework/external-plugins/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form" class="form-minimal">
+							<div class="col-md-6 col-sm-12"> 
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+									<div class="form-line"></div>
+								</div>
+
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+									<div class="form-line"></div>
+								</div>
+
+								<div class="form-group">
+									<label for="phone">Phone</label>
+									<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
+									<div class="form-line"></div>
+								</div>
+
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group">
+									<label for="comments">Comments</label>
+									<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+									<div class="form-line"></div>
+								</div>
+
+								<!-- <fieldset class="clearfix securityCheck">
+									<h3>Security</h3>
+
+									<div class="form-group">
+										<label for="verify">		
+											<img src="scripts/neko-framework/external-plugins/neko-contact-ajax-plugin/php/image.php" alt="Image verification"/>
+										</label>
+										<input class="required form-control"  id="verify" name="verify" type="text" placeholder="Enter the captcha…">
+										<div class="form-line"></div>
+									</div>
+									
+								</fieldset> -->
+								<button name="submit" type="submit" class="btn large primary" id="submit"> Submit</button>
+								<div class="result"></div>
+							</div>
+						</form>
+<!-- 						<div class="col-md-6 col-sm-12">
+							<div class="box">
+								<div id="map-wrapper" class="small light"></div>
+							</div>
+						</div>  -->                      
+						
+						
+					</div>
+				</div>
+				
+			</section>
+			<!-- / contact form -->
+		</main>
+		<!-- / content -->

@@ -1,0 +1,97 @@
+			<header class="page-header x-large image-background image-bkgrnd bottom-center dark-color center no-padding">
+			<section class="image-background image-bkgrnd fullscreen light-color" id="animated-header">
+				
+				<div class="mask opacity-2">
+					<div class="container v-align-center">
+						<div class="row pt-large pb-large">
+							<div class="col-md-12 text-center">
+								<h1 class="x-large text-light" data-nekoanim="fadeInUp" data-nekodelay="200">Get Involved</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<canvas id="animated-bubble"></canvas>
+			</section>
+			</header>
+
+			<!-- intro -->
+			<section class="pt-medium pb-medium light-color">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<h2>Interested in supporting us?</h2>
+							<p class="no-mb">
+								We're looking for financial investors who've always dreamed of opening their own shop.  We're seeking finance loans to make this dream a reality and get our cafe off the ground.
+						</p>
+						</div>
+						<div class="col-sm-4">
+							<p>
+								If you're interested and want to learn more, please contact us and we will send you a copy of our business plan with Pro Forma and schedule a meeting at your convenience.
+
+								We can't wait to start roasting and brewing in our very own shop.
+						</p>
+						</div>
+						<div class="col-sm-4">
+							<address>
+								<p>		
+									Brooklyn, New York <br>
+									<img id="phone" src="images/phone-number.png">
+									<a href="mailto:info@regalpuffincoffee.com">info@regalpuffincoffee.com</a>
+								</p>
+							</address>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="container">
+					<div class="row">
+
+						<div ng-controller="GetInvolvedCtrl">
+							<form id="contactfrm" role="form" class="form-minimal" name="form" novalidate="novalidate">
+								<div class="col-md-6 col-sm-12"> 
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" name="uName" id="name" placeholder="Enter name" ng-model="user.name" name="uName" required=""/>
+										<div class="form-line"></div>
+										<div ng-show="!form.$submitted && form.uName.$touched">
+								      <span style="color:#a94442" ng-show="form.uName.$error.required">Please enter your name</span>
+								    </div>
+									</div>
+									<br>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="user.email" name="uEmail" required=""/>
+										<div class="form-line"></div>
+										<div ng-show="!form.$submitted && form.uEmail.$touched">
+								      <span style="color:#a94442" ng-show="form.uEmail.$error.required">Please enter your email address</span>
+								      <span style="color:#a94442" ng-show="form.uEmail.$error.email">Please enter a valid email address</span>
+								    </div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<div class="form-group">
+										<label for="comments">Comments</label>
+										<textarea name="uComment" class="form-control" id="comments" cols="3" rows="6" placeholder="Please enter your message, and let us know the best way to reach you..." ng-model="user.comment" required=""></textarea>
+										<div class="form-line"></div>
+									</div>
+
+									<button name="submit" type="submit" class="btn large primary" id="submit" ng-class="{'btn small default' : sent}" ng-click="update(user)"> {{buttonStatus}}</button>
+									<div class="result"></div>
+								</div>
+							</form>
+						</div>
+<!-- 						<div class="col-md-6 col-sm-12">
+							<div class="box">
+								<div id="map-wrapper" class="small light"></div>
+							</div>
+						</div>  -->                      
+						
+						
+					</div>
+				</div>
+				
+			</section>
+			<!-- / contact form -->
+		</main>
+		<!-- / content -->
