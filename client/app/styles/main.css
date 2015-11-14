@@ -82,8 +82,8 @@ body {
   }
 }
 
-@font-face{
-    font-family: "Nyala";
+/*@font-face{
+    font-family: 'Philosopher', sans-serif;
     src: url('./fonts/nyala.ttf'),
 }
 h1, h2, h3, h4, h5, span , p, a {
@@ -92,6 +92,22 @@ h1, h2, h3, h4, h5, span , p, a {
 
 label, button, input, textarea {
     font-family: "Nyala" !important;
+}*/
+
+/*@font-face{
+    font-family: 'Philosopher', sans-serif;
+    src: url('./fonts/nyala.ttf'),
+}*/
+h1, h2, h3, h4, h5, span , p, a {
+  font-family: "Philosopher" !important;
+}
+
+label, button, input, textarea {
+    font-family: "Philosopher" !important;
+}
+
+h1, h2, h3, h4, h5, label, button {
+  font-weight: 700;
 }
 
 a.navbar-brand {

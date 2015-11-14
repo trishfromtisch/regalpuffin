@@ -23,6 +23,16 @@ angular.module('regalpuffinApp')
         return viewLocation === $location.path();
     };
 
+    $scope.showMenu = false;
+
+    $scope.menuClicked = function(){
+      if ($scope.showMenu === true) {
+        $scope.showMenu = false;
+      } else {
+        $scope.showMenu = true;
+      }
+    };
+
     var rpcTemplate = '<div class="row"><div class="col-md-4 col-md-offset-1"><img class="responsive mb-sm" style="margin-top:-20px" src="images/logo-footer.png" alt=""/></div><div class="col-md-6 text-left"><h2>Bringing quality coffee to Brooklyn</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regal Puffin will be a neighborhood specialty coffee roaster and espresso cafe built for the fast paced commercial and residential mix of Brooklyn. We’ll select choice, high quality, specialty green coffee beans to be roasted with care and made available for purchase by in-store guests and wholesale buyers. Using precise, cutting edge techniques, will brew and serve coffee that boasts our beans’ distinctive character. With the purchase of any beverage made with our velvety, sweet espresso or bright, juicy coffee, all guests will receive a complimentary chocolate “crown.” Guests will also be able to enjoy an assortment of fresh baked croissants, fresh squeezed juices, and curated selection of Brooklyn made goods for resale.</p></div></div>'
 
     $scope.tabs = [{
