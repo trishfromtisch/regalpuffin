@@ -44,7 +44,7 @@
     <!-- header -->
 
     <header class="menu-header navbar-fixed-top" role="banner">
-      <section id="pre-header">
+<!--       <section id="pre-header">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 hidden-xs">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <div class="col-xs-12">
 
         <nav class="navbar navbar-default" role="navigation" ng-controller="MainCtrl">
@@ -75,18 +75,21 @@
               <img src="images/main-logo.png" alt="Regal Puffin Coffee" class="main-logo"/>
               <img src="images/main-logo-light.png" alt="Regal Puffin Coffee" class="main-logo-light"/>
             </a>
-            </div>
-            <!-- /Logo -->
-
-          <div class="navbar-header col-xs-6">
-            <!-- hamburger button -->
-            <button type="button" class="navbar-toggle" ng-click="menuClicked">
+            </div class="col-xs-1">
+            <div>
+            <button type="button" class="navbar-toggle" ng-click="menuClicked()">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            </div>
             <!-- / hamburger button -->
+            <!-- /Logo -->
+
+          <div class="navbar-header col-xs-6">
+            <!-- hamburger button -->
+
 
             <div class="navbar" ng-show="showMenu">
             <!-- Main navigation -->
@@ -100,7 +103,7 @@
               </li>
 
               <li>
-                <a href="#/get-involved" ng-class="{ active: isActive('/#/get-involved')}">Get Involved</a>
+                <a href="" ng-click="linkTo('/#get-involved')" ng-class="{ active: isActive('/#/get-involved')}">Get Involved</a>
               </li>
 
               <li>

@@ -23,7 +23,7 @@ angular.module('regalpuffinApp')
         return viewLocation === $location.path();
     };
 
-    $scope.showMenu = false;
+    $scope.showMenu = true;
 
     $scope.menuClicked = function(){
       if ($scope.showMenu === true) {
