@@ -40,9 +40,9 @@ router.post('/', function (req, res, next) {
     // show the request body in the command line
     var email = {
 	    to: 'regalpuffincoffee@gmail.com',
-	    from: formContent.email,
+	    from: 'regalpuffincoffee@gmail.com',
 	    subject: 'New RegalPuffinCoffee.com Inquiry from ' + formContent.name,
-	    html: "<p><strong>Message</strong>:<br> " + formContent.message + "<br><br><strong>Phone number</strong>:<br>" + formContent.phone + "</p>"
+	    html: "<p><strong>Message</strong>:<br> " + formContent.message + "<br><br><strong>Email</strong>:<br>" + formContent.email + "</p>"
   	};
 
     transporter.sendMail(email, function(error, response){
