@@ -39,8 +39,8 @@ router.post('/', function (req, res, next) {
 		var formContent = req.body
     // show the request body in the command line
     var email = {
-	    to: 'regalpuffincoffee@gmail.com',
-	    from: 'regalpuffincoffee@gmail.com',
+	    to: 'info@regalpuffincoffee.com',
+	    from: 'info@regalpuffincoffee.com',
 	    subject: 'New Regal Puffin Mailing List Addition',
 	    html: "<p>Please add <br><strong> " + formContent.email + "</strong> to the list.</p>"
   	};
